@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,50 +7,61 @@ body {
     position: relative;
 }
 
-/* Adicione as regras de estilo para dispositivos móveis aqui */
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: 16px;
     }
 
     header {
-        padding: 5px 0; /* Ajuste o padding conforme necessário */
+        padding: 10px 0;
     }
 
     .profile img {
-        max-width: 100%; /* Imagens responsivas */
+        max-width: 100%;
         height: auto;
-        margin-bottom: 5px; /* Ajuste conforme necessário */
+        border-radius: 50%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        transition: transform 0.5s, opacity 0.5s;
     }
 
-    .projects {
-        padding: 20px; /* Ajuste conforme necessário */
-    }
-
-    .project {
-        flex-direction: column; /* Altere a direção da flexbox para empilhar os itens */
-        margin-bottom: 20px;
-        padding: 10px;
-    }
-
-    .project-media,
-    .project-info {
-        margin-right: 0; /* Remova a margem direita */
-    }
-
-    .project-media img {
-        border-radius: 0; /* Remova a borda arredondada, se desejar */
-    }
-
-    .project-info a {
-        margin-top: 10px; /* Ajuste conforme necessário */
+    .profile:hover img {
+        transform: scale(1.1);
+        opacity: 1;
     }
 
     .theme-toggle {
-        top: 5px; /* Ajuste conforme necessário */
-        right: 5px; /* Ajuste conforme necessário */
-        font-size: 12px; /* Ajuste conforme necessário */
-        padding: 5px 10px; /* Ajuste conforme necessário */
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-media img,
+    .project iframe {
+        border-radius: 8px;
+    }
+
+    .project-info {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .project-info a {
+        padding: 10px 16px;
+        margin-top: 15px;
+        font-size: 14px;
     }
 }
 
@@ -65,10 +76,10 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #333, #222);
+    background: linear-gradient(to bottom, #333333, #000000);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     transition: background 0.5s, color 0.5s;
 }
 
@@ -79,7 +90,7 @@ header {
 }
 
 .profile img {
-    border-radius: 50%;
+    border-radius: 8px;
     max-width: 150px;
     max-height: 150px;
     object-fit: cover;
@@ -120,31 +131,31 @@ p {
 .theme-toggle {
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #000; /* Tom mais escuro de azul */
+    background-color: #000;
     color: #fff;
-    border: none;
+    border: 2px solid #ffffff;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     transition: background-color 0.3s;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
 }
 
 .theme-toggle:hover {
-    background-color: #000; /* Tom mais escuro ao passar o mouse */
+    background-color: #333;
 }
 
 .projects {
-    padding: 60px; /* Ajuste o valor conforme necessário */
+    padding: 60px;
 }
 
 .project {
     display: flex;
-    padding: 20px; /* Ajuste o valor conforme necessário para aumentar ou diminuir o espaçamento interno */
-    margin-bottom: 40px; /* Ajuste o valor conforme necessário para aumentar ou diminuir o espaçamento externo */
+    padding: 20px;
+    margin-bottom: 40px;
     border-bottom: 1px solid #555;
 }
 
@@ -180,32 +191,21 @@ p {
     transform: scale(1.1);
 }
 
-.project-media.project2 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project-info.project2 {
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.project.reverse {
-    flex-direction: row-reverse;
-}
-
 .project-info a {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 15px;
     text-decoration: none;
     color: #fff;
-    background-color: #000000; /* Tom mais escuro de azul */
+    background-color: #000000;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .project-info a:hover {
-    background-color: #000000; /* Tom mais escuro ao passar o mouse */
+    background-color: #333333;
+}
+
+.project.reverse {
+    flex-direction: row-reverse;
 }
