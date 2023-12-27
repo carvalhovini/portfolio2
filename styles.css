@@ -7,6 +7,53 @@ body {
     position: relative;
 }
 
+/* Adicione as regras de estilo para dispositivos móveis aqui */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    header {
+        padding: 5px 0; /* Ajuste o padding conforme necessário */
+    }
+
+    .profile img {
+        max-width: 100%; /* Imagens responsivas */
+        height: auto;
+        margin-bottom: 5px; /* Ajuste conforme necessário */
+    }
+
+    .projects {
+        padding: 20px; /* Ajuste conforme necessário */
+    }
+
+    .project {
+        flex-direction: column; /* Altere a direção da flexbox para empilhar os itens */
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .project-media,
+    .project-info {
+        margin-right: 0; /* Remova a margem direita */
+    }
+
+    .project-media img {
+        border-radius: 0; /* Remova a borda arredondada, se desejar */
+    }
+
+    .project-info a {
+        margin-top: 10px; /* Ajuste conforme necessário */
+    }
+
+    .theme-toggle {
+        top: 5px; /* Ajuste conforme necessário */
+        right: 5px; /* Ajuste conforme necessário */
+        font-size: 12px; /* Ajuste conforme necessário */
+        padding: 5px 10px; /* Ajuste conforme necessário */
+    }
+}
+
 .light-theme {
     background-color: #fff;
     color: #333;
