@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo({
             top: offset,
             behavior: 'smooth',
-            duration: 1000 // Ajuste a duração conforme necessário (em milissegundos)
+            duration: 1000
         });
     });
 });

@@ -7,29 +7,6 @@ body {
     position: relative;
 }
 
-.about-me {
-    padding: 30px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.about-me h2 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.about-me p {
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-
-
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
     body {
@@ -231,4 +208,25 @@ p {
 
 .project.reverse {
     flex-direction: row-reverse;
+}
+
+.about-me {
+    padding: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.about-me h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
