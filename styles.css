@@ -76,7 +76,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #333333, #000000);
+    background: linear-gradient(to bottom, #333333, #000000, #000000);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -216,6 +216,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    text-align: justify; /* Align text to justify for a cleaner look */
 }
 
 .about-me h2 {
@@ -227,12 +228,33 @@ p {
 .about-me p {
     color: #fff;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6; /* Adjusted line height for better readability */
     margin-bottom: 15px;
 }
 
 .language-icon {
     width: 30px;
     height: 30px;
-    margin-top: 5px
+    margin-top: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    /* ... (unchanged) ... */
+
+    .about-me {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .about-me h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
 }
