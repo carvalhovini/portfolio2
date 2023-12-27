@@ -71,7 +71,7 @@ body {
 }
 
 .dark-theme {
-    background-color: #1f1f1f;
+    background-color: #000;
     color: #fff;
 }
 
@@ -131,7 +131,7 @@ p {
 .theme-toggle {
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #000;
+    background-color: #353535;
     color: #fff;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -145,7 +145,7 @@ p {
 }
 
 .theme-toggle:hover {
-    background-color: #333;
+    background-color: #010101;
 }
 
 .projects {
@@ -197,13 +197,13 @@ p {
     margin-top: 15px;
     text-decoration: none;
     color: #fff;
-    background-color: #000000;
+    background-color: #353535;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .project-info a:hover {
-    background-color: #333333;
+    background-color: #1d1d1d;
 }
 
 .project.reverse {
