@@ -230,3 +230,9 @@ p {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+.language-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px
+}
