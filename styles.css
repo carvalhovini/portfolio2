@@ -138,15 +138,15 @@ p {
     margin: 0 10px;
     transition: color 0.3s;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 0.5% 1%;
     background-color: #353535;
     color: #fff;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s;
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 20px;
     display: flex;
     align-items: center;
@@ -158,10 +158,10 @@ p {
 
 .theme-toggle {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 0.5% 1%;
     background-color: #353535;
     color: #fff;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s;
@@ -179,7 +179,7 @@ p {
 
 
 .projects {
-    padding: 60px;
+    padding: 5%;
 }
 
 .project {
@@ -206,12 +206,13 @@ p {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    
 }
 
 .project-media img,
 .project iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     transition: transform 0.5s;
 }
