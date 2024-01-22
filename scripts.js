@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function updateThemeButtonText() {
-        const themeButtonText = document.body.classList.contains('light-theme') ? 'Modo Claro' : 'Modo Escuro';
+        const themeButtonText = document.body.classList.contains('light-theme') ? 'White Mode' : 'Dark Mode';
         themeSwitch.querySelector('.theme-text').textContent = themeButtonText;
     }
 });
